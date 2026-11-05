@@ -21,17 +21,19 @@ Diseñé y ejecuté el proceso de QA completo para este proyecto, como parte del
 
 **Por qué manual y no automatizado en este proyecto:** LookAtMe.ia depende fuertemente de resultados generados por IA (outfits, detección de prendas, recomendaciones de estilo) que varían por diseño — validar "¿tiene sentido esta recomendación de moda?" requiere juicio humano, no solo comparar un resultado esperado fijo. El proceso automatiza lo que sí es determinístico (smoke test de build, checklist de regresión) y deja la validación de UX/IA a pruebas manuales estructuradas y trazables.
 
-**Cobertura:** 14 sprints de QA, ~83 casos de prueba documentados, sobre 9 módulos: autenticación/onboarding, closet digital, generador de outfits, prueba virtual, perfil de estilo, perfil y cuenta, premium/cuotas, legal y consentimiento, y monetización (AdMob).
+**Cobertura:** 14 sprints de QA, 71 casos de prueba documentados, sobre 9 módulos: autenticación/onboarding, closet digital, generador de outfits, prueba virtual, perfil de estilo, perfil y cuenta, premium/cuotas, legal y consentimiento, y monetización (AdMob).
 
 ## Resultados
+
+**Estado de ejecución:** los 71 casos están documentados; el resultado marcado por caso en estos archivos solo se conserva en `auth-onboarding` (8 pasan, 3 fallan, 5 no probados) y parcialmente en `perfil-de-estilo`. En los demás módulos la evidencia de ejecución son los 20 informes de error de abajo, no el estado por caso.
 
 **20 bugs encontrados y corregidos** en pruebas de dispositivo real, clasificados por severidad:
 
 | Severidad | Cantidad | Ejemplo |
 |---|---|---|
 | 🔴 Crítico | 2 | Registro de consentimiento legal no se guardaba en base de datos |
-| 🟠 Alto | 4 | Orden de pantallas de onboarding incorrecto; la IA no sostenía ajustes previos al generar outfits |
-| 🟡 Medio | 13 | Filtros faltantes, copy inconsistente con la épica, catálogo no visible |
+| 🟠 Alto | 5 | Orden de pantallas de onboarding incorrecto; la IA no sostenía ajustes previos al generar outfits |
+| 🟡 Medio | 12 | Filtros faltantes, copy inconsistente con la épica, catálogo no visible |
 | ⚪ Cosmético | 1 | Botón duplicado en estado vacío |
 
 Ver el detalle completo, con pasos de reproducción y trazabilidad a cada caso de prueba, en [`informes-de-error/bugs-encontrados.md`](informes-de-error/bugs-encontrados.md).
@@ -64,4 +66,4 @@ smoke-test.md           gate obligatorio antes de entregar un APK
 
 ---
 
-*Sergio Ávila — QA Automation Engineer · [github.com/bikerdevsergio](https://github.com/bikerdevsergio)*
+*Sergio Ávila — QA Engineer (pruebas manuales, en transición a automatización) · [github.com/bikerdevsergio](https://github.com/bikerdevsergio)*

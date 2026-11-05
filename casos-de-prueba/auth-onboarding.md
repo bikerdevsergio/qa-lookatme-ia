@@ -2,8 +2,8 @@
 
 Es el bloque más crítico: si esto falla, nadie más puede usar la app.
 Dividido en sprints de prueba, cada uno con su ronda de informes de
-error — ver `../../02-diseno/flujo-auth-onboarding.md` para el diseño
-completo de cada revisión.
+error. El diseño del flujo (documento interno del proyecto) tuvo 4
+revisiones a partir de estos hallazgos.
 
 ---
 
@@ -12,7 +12,7 @@ completo de cada revisión.
 Primera ronda de pruebas, contra el orden implementado originalmente
 (consentimiento → formulario nombre/edad/contraseña → fotos → medidas
 en pantalla separada). Resultado: **2 informes de error**
-(`look001`, `look002`) — el orden no era el que Sergi esperaba (fotos
+(`look001`, `look002`) — el orden no era el que el product owner esperaba (fotos
 antes del formulario, medidas y talla en el mismo formulario que la
 cuenta). Ver `plantilla-informe-error look001.md` y `...look002.md`.
 
@@ -154,16 +154,16 @@ email/contraseña que ya había definido.
 onboarding completo desde el consentimiento — sin pedir crear una cuenta
 nueva ni mostrar error de "correo duplicado" en este camino.
 
-**Resultado:** No aplica — caso inválido según Sergi (2026-09-04): "solo hay dos opciones, o te registras o no te registras", no hay un estado intermedio distinto que probar aparte de CP-07.
+**Resultado:** No aplica — caso inválido según el product owner (2026-09-04): "solo hay dos opciones, o te registras o no te registras", no hay un estado intermedio distinto que probar aparte de CP-07.
 
 **Código del informe de error:** 
 
 ### CP-12 — SUPERADO por look006, ver `perfil-de-estilo.md`
 **Reemplazado 2026-09-04:** este caso probaba "Cambiar mi estilo" como
 la lista fija de 6 estilos guardando directo. El informe `look006`
-mostró que Sergi espera algo mucho más completo (catálogo + IA), y la
+mostró que el product owner espera algo mucho más completo (catálogo + IA), y la
 decisión fue FUSIONAR esa pantalla con "Mi perfil de estilo" en un solo
-flujo (ver `../../02-diseno/cambiar-estilo-rediseno.md`, E4-07) — la
+flujo (requisito E4-07) — la
 pantalla fija de 6 como entrada independiente de Perfil deja de existir,
 así que este caso tal como estaba escrito ya no aplica. Los casos
 nuevos que la reemplazan son CP-08 a CP-15 de `perfil-de-estilo.md`.
@@ -184,7 +184,7 @@ del onboarding) y confirma con un mensaje.
 **Resultado del sprint:** ❌ bloqueante — CP-06/CP-08/CP-10 fallaron
 (look003, look004, look005), ningún registro real llegaba a completarse
 con confirmación de email obligatoria. Llevó a la Revisión 3 del diseño
-(staging en el backend, ver `../../02-diseno/flujo-auth-onboarding.md`).
+(staging en el backend).
 
 ---
 

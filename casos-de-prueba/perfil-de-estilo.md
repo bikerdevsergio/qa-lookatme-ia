@@ -1,8 +1,7 @@
 # Casos de prueba — Perfil de estilo (E4)
 
-Ver diseño en `../../02-diseno/perfil-de-estilo.md` y, para el rediseño
-de fusión + catálogo + E4-02/E4-03 (a partir de `look006`,
-2026-09-04), `../../02-diseno/cambiar-estilo-rediseno.md`.
+Diseño en documentos internos del proyecto; el rediseño de fusión +
+catálogo + E4-02/E4-03 surgió del informe `look006` (2026-09-04).
 
 **Nota:** CP-01 a CP-07 (abajo) prueban el flujo que YA existe. CP-08 en
 adelante prueban lo nuevo del rediseño (catálogo, fusión de los dos

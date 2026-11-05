@@ -2,7 +2,7 @@
 
 20 bugs reales encontrados durante pruebas manuales en dispositivo (Honor X7), entre 2026-09-05 y 2026-09-11. Todos corregidos y verificados. Clasificados por severidad y trazables a su caso de prueba.
 
-**Resumen por severidad:** 2 críticos · 4 altos · 13 medios · 1 cosmético — 20/20 corregidos.
+**Resumen por severidad:** 2 críticos · 5 altos · 12 medios · 1 cosmético — 20/20 corregidos.
 
 ---
 
@@ -49,15 +49,21 @@
 **Encontrado:** Al pedir un segundo ajuste (cambiar los zapatos), se perdía el ajuste anterior (el pantalón elegido) en vez de mantenerse.
 **Estado:** Corregido.
 
+### [lookatmeia006] Cambiar foto corporal no elimina la anterior
+**Caso relacionado:** perfil-y-cuenta
+**Esperado:** La foto nueva reemplaza a la anterior; la vieja se borra de Storage.
+**Encontrado:** La foto anterior quedaba huérfana en Storage.
+**Por qué es Alto (reclasificado desde Medio):** la foto corporal es un dato biométrico sensible (Ley 1581 de 2012); conservarla tras reemplazarla contradice lo informado al usuario en el consentimiento.
+**Estado:** Corregido.
+
 ---
 
-## Medios (13) — resumen
+## Medios (12) — resumen
 
 | Código | Módulo | Título |
 |---|---|---|
 | lookatmeia002 | auth-onboarding | Pantalla "cuál es tu estilo" se veía después del registro, no antes |
 | lookatmeia004 | generador-outfits | Modo manual — ocasión/clima/ánimo sin opción de texto personalizado |
-| lookatmeia006 | perfil-y-cuenta | Cambiar foto corporal no reemplazaba la anterior (quedaba huérfana en Storage) |
 | lookatmeia007 | generador-outfits | Faltaban sugerencias de clima y estado de ánimo |
 | lookatmeia008 | perfil-de-estilo | Naming y copy inconsistentes con la épica (mezclaba textos de onboarding) |
 | lookatmeia009 | perfil-de-estilo | Copy de "actualizar estilo" no correspondía a la épica |

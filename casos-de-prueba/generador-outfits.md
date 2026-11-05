@@ -28,7 +28,7 @@ el cinturón" o similar, desde una opción cerrada de la UI, no un campo de
 texto libre).
 **Esperado:** Se regenera solo con ese ajuste aplicado. **No debe existir
 un campo de texto libre estilo chat** — la interacción es por opciones
-cerradas (ver nota en CLAUDE.md, Módulo 3: la app no es un chat de
+cerradas (regla de producto: la app no es un chat de
 propósito general).
 
 **Resultado:** [ ] Pasa &nbsp;&nbsp; [ ] Falla &nbsp;&nbsp; [ ] No probado

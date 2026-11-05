@@ -28,8 +28,8 @@ abrir los 3 documentos (Política de Privacidad, T&C, Consentimiento
 informado).
 **Esperado:** Cada uno abre, se puede hacer scroll completo, el texto
 coincide con `legal/*.md` (Bogotá como domicilio, sin el pie "redactado
-con asistencia de IA" — remover ese pie fue instrucción explícita de
-Sergi, ver commit correspondiente).
+con asistencia de IA" — remover ese pie fue instrucción explícita del
+product owner).
 
 **Resultado:** [ ] Pasa &nbsp;&nbsp; [ ] Falla &nbsp;&nbsp; [ ] No probado
 
